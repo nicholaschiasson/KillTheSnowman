@@ -1,4 +1,4 @@
-# KillTheSnowman
+# Kill The Snowman
 Ludum Dare 31 entry
 
 ### Controls
