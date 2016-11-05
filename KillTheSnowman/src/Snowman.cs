@@ -14,7 +14,6 @@ namespace KillTheSnowman
         public int SnowballsThrown { get; set; }
         public int KillCount { get; set; }
 
-        KeyboardState oldKeyState;
         MouseState oldMouseState;
 
         public Snowman() : base() { }
@@ -118,7 +117,6 @@ namespace KillTheSnowman
                 SnowballsThrown++;
             }
 
-            oldKeyState = newKeyState;
             oldMouseState = newMouseState;
         }
 

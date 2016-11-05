@@ -89,7 +89,6 @@ namespace KillTheSnowman
             snowFlakes = new List<SnowFlake>();
             rand = new Random();
 
-            int snowFlakeCount = rand.Next(MAX_SNOWFLAKES / 2, MAX_SNOWFLAKES);
             for (int i = 0; i < MAX_SNOWFLAKES; i++)
             {
                 SnowFlake flake = new SnowFlake();
