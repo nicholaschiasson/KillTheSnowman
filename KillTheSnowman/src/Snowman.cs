@@ -65,7 +65,7 @@ namespace KillTheSnowman
         private void UpdateInput()
         {
             KeyboardState newKeyState = Keyboard.GetState();
-            MouseState newMouseState = Utils.Mouse.GetState();
+            MouseState newMouseState = Mouse.GetState();
             moving = false;
 
             velocity = Vector2.Zero;

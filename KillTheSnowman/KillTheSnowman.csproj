@@ -50,7 +50,6 @@
     <Compile Include="src\Snowball.cs" />
     <Compile Include="src\SnowFall.cs" />
     <Compile Include="src\Snowman.cs" />
-    <Compile Include="src\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Icon.png" />
