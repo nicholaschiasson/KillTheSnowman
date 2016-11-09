@@ -2,13 +2,13 @@
 Ludum Dare 31 entry
 
 ### Controls
-| Key        | Action        |
-| ---------- | ------------- |
-| w          | Move up       |
-| a          | Strafe left   |
-| s          | Move down     |
-| d          | Strafe right  |
-| LEFT MOUSE | Aim/look      |
+| Key        | Action         |
+| ---------- | -------------- |
+| w          | Move up        |
+| a          | Strafe left    |
+| s          | Move down      |
+| d          | Strafe right   |
+| LEFT MOUSE | Throw snowball |
 
 ### Objective
 It's voting season before Ludum Dare 31. Despite all odds, ☃ has somehow made it to the final round of voting. Naturally, this means that an onslaught of hate and disappointment is yet to come...
