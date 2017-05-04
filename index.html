@@ -32,6 +32,11 @@
               if (releaseMacButton) {
                 releaseMacButton.setAttribute("href", data.assets[i].browser_download_url);
               }
+            } else if (data.assets[i].name === "KillTheSnowman-" + data.tag_name + "-linux.zip") {
+              releaseLinButton = document.getElementById("lin-release");
+              if (releaseLinButton) {
+                releaseLinButton.setAttribute("href", data.assets[i].browser_download_url);
+              }
             } else {
               console.error("Found unexpected asset: " + data.assets[i]);
             }
