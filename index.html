@@ -22,7 +22,12 @@
           // Success!
           var data = JSON.parse(request.responseText);
           for (var i = 0; i < data.assets.length; i++) {
-            if (data.assets[i].name === "KillTheSnowman-" + data.tag_name + "-macosx.zip") {
+            if (data.assets[i].name === "KillTheSnowman-" + data.tag_name + "-windows.zip") {
+              releaseWinButton = document.getElementById("win-release");
+              if (releaseWinButton) {
+                releaseWinButton.setAttribute("href", data.assets[i].browser_download_url);
+              }
+            } else if (data.assets[i].name === "KillTheSnowman-" + data.tag_name + "-macosx.zip") {
               releaseMacButton = document.getElementById("mac-release");
               if (releaseMacButton) {
                 releaseMacButton.setAttribute("href", data.assets[i].browser_download_url);
@@ -103,9 +108,17 @@
         </section>
 
         <aside id="sidebar">
+          <a id="win-release" href="https://github.com/nicholaschiasson/KillTheSnowman/releases/latest" class="button">
+            <small>Latest Release</small>
+            windows
+          </a>
           <a id="mac-release" href="https://github.com/nicholaschiasson/KillTheSnowman/releases/latest" class="button">
             <small>Latest Release</small>
             macosx
+          </a>
+          <a id="lin-release" href="https://github.com/nicholaschiasson/KillTheSnowman/releases/latest" class="button">
+            <small>Latest Release</small>
+            linux
           </a>
           <a href="https://github.com/nicholaschiasson/KillTheSnowman/releases/latest" class="button">
             <small>Latest Release</small>
