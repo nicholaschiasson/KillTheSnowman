@@ -32,10 +32,15 @@
               if (releaseMacButton) {
                 releaseMacButton.setAttribute("href", data.assets[i].browser_download_url);
               }
-            } else if (data.assets[i].name === "KillTheSnowman-" + data.tag_name + "-linux.zip") {
-              releaseLinButton = document.getElementById("lin-release");
-              if (releaseLinButton) {
-                releaseLinButton.setAttribute("href", data.assets[i].browser_download_url);
+            } else if (data.assets[i].name === "KillTheSnowman-" + data.tag_name + "-linux-x86.tar.gz") {
+              releaseLin32Button = document.getElementById("lin32-release");
+              if (releaseLin32Button) {
+                releaseLin32Button.setAttribute("href", data.assets[i].browser_download_url);
+              }
+            } else if (data.assets[i].name === "KillTheSnowman-" + data.tag_name + "-linux-x86_64.tar.gz") {
+              releaseLin64Button = document.getElementById("lin64-release");
+              if (releaseLin64Button) {
+                releaseLin64Button.setAttribute("href", data.assets[i].browser_download_url);
               }
             } else {
               console.error("Found unexpected asset: " + data.assets[i]);
@@ -121,9 +126,13 @@
             <small>Latest Release</small>
             macosx
           </a>
-          <a id="lin-release" href="https://github.com/nicholaschiasson/KillTheSnowman/releases/latest" class="button">
+          <a id="lin32-release" href="https://github.com/nicholaschiasson/KillTheSnowman/releases/latest" class="button">
             <small>Latest Release</small>
-            linux
+            linux 32-bit
+          </a>
+          <a id="lin64-release" href="https://github.com/nicholaschiasson/KillTheSnowman/releases/latest" class="button">
+            <small>Latest Release</small>
+            linux 64-bit
           </a>
           <a href="https://github.com/nicholaschiasson/KillTheSnowman/releases/latest" class="button">
             <small>Latest Release</small>
