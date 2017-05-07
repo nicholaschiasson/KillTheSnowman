@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using Microsoft.Xna.Framework;
@@ -202,7 +202,7 @@ namespace KillTheSnowman
 			{
 				// Create a new SpriteBatch, which can be used to draw textures.
 				spriteBatch = new SpriteBatch(GraphicsDevice);
-				gameFont = Content.Load<SpriteFont>("SpriteFonts/SpriteFont1");
+				gameFont = Content.Load<SpriteFont>("Spritefonts/SpriteFont1");
 			}
 
 			if (gameState == GameState.SPLASHSCREEN)
@@ -227,10 +227,10 @@ namespace KillTheSnowman
 
 				//snowballThrowSound = Content.Load<SoundEffect>("Audio/ThrowSnowball");
 
-				furthestSnowFall.LoadContent(Content, "snowFlake_01");
-				farSnowFall.LoadContent(Content, "snowFlake_01");
-				nearSnowFall.LoadContent(Content, "snowFlake_01");
-				nearestSnowFall.LoadContent(Content, "snowFlake_01");
+				furthestSnowFall.LoadContent(Content, "snowflake_01");
+				farSnowFall.LoadContent(Content, "snowflake_01");
+				nearSnowFall.LoadContent(Content, "snowflake_01");
+				nearestSnowFall.LoadContent(Content, "snowflake_01");
 
 				EffectBank.AddEffect(Content, "bloodeffect_01", 4, 1, 16);
 				EffectBank.AddEffect(Content, "darecontestant_death", 8, 1, 24);
